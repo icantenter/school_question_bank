@@ -24,7 +24,7 @@ int main(void)
 	for (i=0; i<3; i++) 
 	{
 		/*********Found************/
-		scanf("%s", *(pstr+i));
+		scanf("%s", pstr[i]);
 	}
 
 	sort(pstr);
@@ -34,8 +34,7 @@ int main(void)
 		/*********Found************/
 		printf("%s\n", pstr[i]);
 	}
-	getchar();
-	getchar();
+
 	return 0;
 }
 
@@ -49,7 +48,7 @@ void sort(char *pstr[])
 		for (j=i+1; j<3; j++)
 		{
 			/*********Found************/
-			if (strcmp(*(pstr+i), *(pstr+j)) > 0)
+			if (strcmp(pstr[i], pstr[j]) > 0)
 			{ 
 				p = *(pstr+i);
 				*(pstr+i) = *(pstr+j);

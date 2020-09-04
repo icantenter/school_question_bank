@@ -15,6 +15,6 @@ int main(void)
 		}
 		printf("\n");
 	}	
-	getchar();
+
 	return 0;
 }
