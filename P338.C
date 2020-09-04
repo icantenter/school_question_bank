@@ -26,6 +26,7 @@ int main()
         printf("文件打开失败，请检查文件名及路径是否正确、文件是否存在！");
         exit(0);
     }
+    //feof尽量写在读取例如fscanf后，不要作为while的判断条件
     while (fscanf(fp, "%ld%s%s%s%f", &temp.number, temp.name, temp.sex,
             temp.course, &temp.score) == 5)
     {
